@@ -59,5 +59,5 @@ app.get('/api/courses/:id', (req, res) => {
 app.get('/posts/:year/:month', (req, res) => {
     res.send(req.params);
 });
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => { console.log(`I am Listening ${port}`) });
